@@ -1,0 +1,38 @@
+.choise {
+  height: 700px;
+  &__header {
+    padding-top: 109px;
+    color: #0f1f1c;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  &__secondheader {
+    padding-top: 15px;
+    color: #0f1f1c;
+    font-size: 55px;
+    font-weight: 600;
+    padding-right: 300px;
+  }
+  &__subheader {
+    color: #0f1f1c;
+    font-size: 25px;
+    font-weight: 500;
+  }
+  &__button {
+    width: 223px;
+    height: 79px;
+    color: #fefefe;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+.choise-container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.slider-container {
+    padding-top: 84px;
+}
