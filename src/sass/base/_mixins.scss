@@ -28,6 +28,7 @@
   .footer {
     .footer__menu-wrap {
       display: block;
+      top: 4331px;
     }
     &__menu {
       display: none;
@@ -103,14 +104,6 @@
   }
 }
 @media (max-width: 426px) {
-  .footer {
-    &__menu-wrap {
-      position: absolute;
-      top: 4200px;
-      left: 350px;
-      z-index: 1;
-    }
-  }
   .form {
     display: flex;
   }
@@ -171,17 +164,21 @@
       }
     }
   }
+  .footer {
+    .footer__menu-wrap {
+      position: absolute;
+      top: 4116px;
+
+      left: 350px;
+      z-index: 1;
+    }
+  }
 }
 @media (max-width: 376px) {
-  .subscribe input {
-    width: 192px;
-    padding-left: 0;
-
-  }
   .footer {
-    &__menu-wrap {
-      top: 4050px;
-      left: 300px;
+    .footer__menu-wrap {
+      top: 3983px;
+      left: 307px;
     }
   }
   .review {
@@ -219,12 +216,11 @@
 @media (max-width: 321px) {
   .subscribe .submit {
     font-size: 11px;
-    width: 75px;
   }
   .footer {
-    &__menu-wrap {
-      top: 3940px;
-      left: 250px;
+    .footer__menu-wrap {
+      top: 3862px;
+      left: 254px;
     }
   }
   .subscribe__header {
