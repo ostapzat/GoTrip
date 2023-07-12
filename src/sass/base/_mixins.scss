@@ -1,4 +1,9 @@
 @media (max-width: 1025px) {
+  .subscribe {
+    input {
+      width: 709px;
+    }
+  }
   .main {
     .nav {
       .signup {
@@ -12,7 +17,9 @@
       }
     }
   }
-
+  .start {
+    width: 968px;
+  }
   .choise {
     &__secondheader {
       padding-right: 150px;
@@ -20,6 +27,9 @@
   }
 }
 @media (max-width: 769px) {
+  .subscribe input {
+    width: 455px;
+  }
   .start {
     width: 651px;
 
@@ -84,6 +94,12 @@
   }
 }
 @media (max-width: 426px) {
+  .subscribe input {
+    width: 268px;
+  }
+  .form {
+    display: flex;
+  }
   .start {
     width: 348px;
     margin-top: 29px;
@@ -143,6 +159,10 @@
   }
 }
 @media (max-width: 376px) {
+  .subscribe .submit {
+    width: 100px;
+    font-size: 14px;
+  }
   .review {
     padding-top: 69px;
   }
@@ -176,6 +196,14 @@
   }
 }
 @media (max-width: 321px) {
+  .subscribe input {
+    width: 208px;
+    padding-left: 10px;
+  }
+  .subscribe__header {
+
+    font-size: 46px;
+  }
   .start {
     width: 264px;
     margin-top: 18px;
@@ -183,13 +211,13 @@
     &__header {
       font-size: 20px;
     }
-    &__subheader { 
+    &__subheader {
       font-size: 17px;
-      }
-      &__button {
-        width: 200px;
-        height: 40px;
-      }
+    }
+    &__button {
+      width: 200px;
+      height: 40px;
+    }
   }
   #reviewimg {
     width: 269px;
