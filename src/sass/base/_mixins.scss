@@ -2,11 +2,6 @@
   .footer__menu a {
     margin-left: 31px;
   }
-  .subscribe {
-    input {
-      width: 709px;
-    }
-  }
   .main {
     .nav {
       .signup {
@@ -43,9 +38,6 @@
     .signup {
       display: none;
     }
-  }
-  .subscribe input {
-    width: 455px;
   }
   .start {
     width: 651px;
@@ -119,9 +111,6 @@
       z-index: 1;
     }
   }
-  .subscribe input {
-    width: 268px;
-  }
   .form {
     display: flex;
   }
@@ -184,15 +173,16 @@
   }
 }
 @media (max-width: 376px) {
+  .subscribe input {
+    width: 192px;
+    padding-left: 0;
+
+  }
   .footer {
     &__menu-wrap {
       top: 4050px;
       left: 300px;
     }
-  }
-  .subscribe .submit {
-    width: 100px;
-    font-size: 14px;
   }
   .review {
     padding-top: 69px;
@@ -227,15 +217,15 @@
   }
 }
 @media (max-width: 321px) {
+  .subscribe .submit {
+    font-size: 11px;
+    width: 75px;
+  }
   .footer {
     &__menu-wrap {
       top: 3940px;
       left: 250px;
     }
-  }
-  .subscribe input {
-    width: 208px;
-    padding-left: 10px;
   }
   .subscribe__header {
     font-size: 46px;

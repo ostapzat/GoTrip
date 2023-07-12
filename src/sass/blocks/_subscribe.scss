@@ -7,7 +7,7 @@
     padding-top: 135px;
   }
   input {
-    width: 800px;
+    width: auto;
     height: 129px;
     border-radius: 35px;
     background: linear-gradient(0deg, #fff 0%, #fff 100%), #c4c4c4;
@@ -19,6 +19,7 @@
     padding-top: 80px;
   }
   .submit {
+    width: auto;
     height: 129px;
   }
 }
