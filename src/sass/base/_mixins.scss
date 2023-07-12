@@ -20,6 +20,11 @@
   }
 }
 @media (max-width: 769px) {
+  .start {
+    width: 651px;
+
+    margin-top: 119px;
+  }
   .review {
     &__header {
       text-align: center;
@@ -79,6 +84,16 @@
   }
 }
 @media (max-width: 426px) {
+  .start {
+    width: 348px;
+    margin-top: 29px;
+    &__header {
+      font-size: 25px;
+    }
+    &__subheader {
+      font-size: 20px;
+    }
+  }
   .review {
     padding-top: 224px;
     &-container {
@@ -161,6 +176,21 @@
   }
 }
 @media (max-width: 321px) {
+  .start {
+    width: 264px;
+    margin-top: 18px;
+    height: 400px;
+    &__header {
+      font-size: 20px;
+    }
+    &__subheader { 
+      font-size: 17px;
+      }
+      &__button {
+        width: 200px;
+        height: 40px;
+      }
+  }
   #reviewimg {
     width: 269px;
     height: 380px;

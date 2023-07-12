@@ -5,7 +5,9 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-
+body {
+  background-color: #f6f6f6;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -26,4 +28,5 @@
 @import "blocks/choise";
 @import "blocks/slider";
 @import "blocks/review";
+@import "blocks/_start";
 @import "base/mixins";

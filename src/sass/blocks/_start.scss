@@ -1,0 +1,31 @@
+.start {
+  width: 1240px;
+  height: 581px;
+  border-radius: 60px;
+  background: url("../img/start.png");
+  margin: 0 auto;
+  display: block;
+  margin-top: 200px;
+  &__header {
+    color: #0f1f1c;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 500;
+    padding-top: 116px;
+  }
+  &__subheader {
+    color: #0f1f1c;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    padding-top: 30px;
+  }
+  &__button {
+    width: 225px;
+    height: 79px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 60px;
+
+  }
+}
