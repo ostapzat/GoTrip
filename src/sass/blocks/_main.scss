@@ -1,0 +1,81 @@
+.main {
+  height: 900px;
+  background: url("../img/main.png") center center/cover no-repeat;
+  &__label {
+    display: flex;
+    width: 227px;
+    height: 50px;
+    border-radius: 15px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    margin-top: 95px;
+  }
+  &__header {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    padding-top: 7px;
+  }
+  &__subheader {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 30px;
+  }
+  &__button {
+    margin-top: 48px;
+  }
+  .nav {
+    .signup {
+      text-decoration: none;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 500;
+      padding-top: 54px;
+      margin-left: 150px;
+    }
+    button {
+      border-radius: 100px;
+      background: linear-gradient(172deg, #ff7b4e 0%, #ff584e 100%), #fff;
+      border: none;
+      width: 128px;
+      height: 49px;
+      flex-shrink: 0;
+      margin-top: 40px;
+      margin-left: 25px;
+      color: #fff;
+      font-family: Poppins;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      &::after {
+        border: none;
+      }
+    }
+    display: flex;
+    flex-direction: row;
+    &__logo {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      padding-top: 54px;
+    }
+    &__menu {
+      padding-left: 140px;
+      padding-top: 54px;
+      a {
+        margin-left: 80px;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    }
+  }
+}

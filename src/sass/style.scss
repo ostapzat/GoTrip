@@ -1,0 +1,27 @@
+@import "base/variables";
+@import "base/animations";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap");
+@import "blocks/hamburger"; 
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.button {
+  width: 263px;
+  height: 91px;
+  border-radius: 27px;
+  background: linear-gradient(172deg, #ff7b4e 0%, #ff584e 100%);
+  border: none;
+  color: #fefefe;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+@import "blocks/main";
+
+@import "base/mixins";
