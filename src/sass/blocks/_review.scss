@@ -1,0 +1,46 @@
+.review {
+  &__header {
+    padding-left: 50px;
+    color: #0f1f1c;
+    font-size: 45px;
+    font-weight: 500;
+  }
+  .alpanasap {
+    &__name {
+      padding-left: 50px;
+      padding-top: 10px;
+      color: #0f1f1c;
+      font-size: 33px;
+      font-weight: 500;
+    }
+    &__location {
+      color: #0f1f1c;
+      font-size: 25px;
+      font-weight: 400;
+      padding-left: 50px;
+    }
+    &__review {
+      color: #0f1f1c;
+      font-size: 22px;
+      font-weight: 500;
+      padding-left: 50px;
+      padding-top: 25px;
+
+    }
+    &__img {
+      padding-left: 50px;
+      padding-top: 25px;
+    }
+    .stars {
+        padding-left: 50px;
+        padding-top: 25px;
+    }
+  }
+  &-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+}
