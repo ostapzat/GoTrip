@@ -1,4 +1,7 @@
 @media (max-width: 1025px) {
+  .footer__menu a {
+    margin-left: 31px;
+  }
   .subscribe {
     input {
       width: 709px;
@@ -27,6 +30,20 @@
   }
 }
 @media (max-width: 769px) {
+  .footer {
+    .footer__menu-wrap {
+      display: block;
+    }
+    &__menu {
+      display: none;
+    }
+    .login {
+      display: none;
+    }
+    .signup {
+      display: none;
+    }
+  }
   .subscribe input {
     width: 455px;
   }
@@ -94,6 +111,14 @@
   }
 }
 @media (max-width: 426px) {
+  .footer {
+    &__menu-wrap {
+      position: absolute;
+      top: 4200px;
+      left: 350px;
+      z-index: 1;
+    }
+  }
   .subscribe input {
     width: 268px;
   }
@@ -159,6 +184,12 @@
   }
 }
 @media (max-width: 376px) {
+  .footer {
+    &__menu-wrap {
+      top: 4050px;
+      left: 300px;
+    }
+  }
   .subscribe .submit {
     width: 100px;
     font-size: 14px;
@@ -196,12 +227,17 @@
   }
 }
 @media (max-width: 321px) {
+  .footer {
+    &__menu-wrap {
+      top: 3940px;
+      left: 250px;
+    }
+  }
   .subscribe input {
     width: 208px;
     padding-left: 10px;
   }
   .subscribe__header {
-
     font-size: 46px;
   }
   .start {

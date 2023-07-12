@@ -2,6 +2,7 @@
 @import "base/animations";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap");
 @import "blocks/hamburger"; 
+@import "blocks/footerham";
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -30,4 +31,5 @@ body {
 @import "blocks/review";
 @import "blocks/_start";
 @import "blocks/subscribe";
+@import "blocks/footer";
 @import "base/mixins";

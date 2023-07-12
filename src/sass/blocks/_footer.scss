@@ -1,0 +1,35 @@
+.footer {
+  &-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+  }
+  &__logo {
+    color: #ff7c4e;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  &__menu {
+    margin-left: 150px;
+    a {
+      color: #0f1f1c;
+      font-size: 15px;
+      font-weight: 500;
+      margin-left: 60px;
+    }
+  }
+  .signup {
+    color: #838b89;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 120px;
+  }
+  .login {
+    width: 128px;
+    height: 49px;
+    margin-left: 30px;
+  }
+}
