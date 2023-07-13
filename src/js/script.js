@@ -43,3 +43,30 @@ function sendMail() {
         .catch(err => console.log(err));
 
 }
+
+
+// Get the button:
+function scrollToTop() {
+    var currentPosition = document.documentElement.scrollTop || document.body.scrollTop;
+
+    if (currentPosition > 0) {
+        window.requestAnimationFrame(scrollToTop);
+        window.scrollTo(0, currentPosition - currentPosition / 10);
+    }
+}
+
+window.addEventListener("scroll", function () {
+    var scrollHeight = document.documentElement.scrollHeight;
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    var windowHeight = document.documentElement.clientHeight;
+
+    if (scrollTop > (scrollHeight / 3)) {
+        document.getElementById("scrollUpButton").style.display = "flex";
+    } else {
+        document.getElementById("scrollUpButton").style.display = "none";
+    }
+});
+
+document.getElementById("scrollUpButton").addEventListener("click", function () {
+    scrollToTop();
+});
